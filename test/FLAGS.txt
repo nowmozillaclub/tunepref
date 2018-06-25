@@ -1,0 +1,23 @@
+The following are the flags that can be used in the Python testfile:
+
+-nodfdesc 
+Suppresses the dataFrame.describe() function for your Dataframe
+
+-nodesc
+Suppresses the examples.describe() function for Training Features, Training Targets, Validation Features, and Validation Targets
+
+-nocorr
+Suppresses the dataFrame.corr() function to prevent displaying the Correlation matrix for the Dataframe
+
+-noplot
+Suppresses the pyplot to prevent displaying the graph of Root Mean Square Error (RMSE) versus Periods for the Training model
+
+The flags can be accessed by typing into the command line an input similar to:
+
+python filename.py <flag1> <flag2> <flag3> <flag4>
+
+For instance:
+
+py testefile_twofeatures.py -nocorr -nodfdesc
+
+All four flags can be used together as well, and their position in the command line does not alter the program.
